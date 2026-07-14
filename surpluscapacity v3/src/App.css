@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  margin-bottom: 24px;
+}
+
+.card h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.success {
+  font-size: 16px;
+  color: #10b981;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.user-section,
+.login-section {
+  text-align: center;
+}
+
+.user-section p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.login-section p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.note {
+  font-size: 14px;
+  color: #999;
+  font-style: italic;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #007AFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #0051D5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+.logout-btn {
+  background-color: #ff3b30;
+}
+
+.logout-btn:hover {
+  background-color: #e82e25;
+}
+
+.info {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 24px;
+  color: white;
+}
+
+.info h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.info ul {
+  list-style: none;
+}
+
+.info li {
+  font-size: 16px;
+  margin-bottom: 12px;
+  padding-left: 24px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+}
